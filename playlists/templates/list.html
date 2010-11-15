@@ -1,0 +1,18 @@
+{% for s in songs %}
+<div class = "songItem {% cycle '' 'shade' %}" id = "{{ s.id }}">
+	{% if s.albumart_url %}
+		<img src = "{{ s.albumart_url }}" />
+	{% else %}
+		<img src = "/static/img/notfound.png" />
+	{% endif %}
+	<span class = "title">{{ s.title }}</span>
+	<span class = "artist">{{ s.artist }}</span>
+	<span class = "album">{{ s.album }}</span>
+	
+	{% if s.sample_url %}
+ 	 <!-- audio src = "{{ s.sample_url }}" controls = "controls"></audio -->
+	{% endif %}
+	<a href = "#" class = "addToPlaylist">+ Add To Playlist</a>
+</div>
+<div class = "clear"></div>
+{% endfor %}

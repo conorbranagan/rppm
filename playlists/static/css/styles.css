@@ -1,0 +1,75 @@
+* { margin:0; padding:0; }
+body { font-family: "lucida grande",tahoma,verdana,arial,sans-serif; background: #fff; color: #333; padding-bottom: 25px; }
+a { text-decoration: none; }
+p { margin: 3px 3px 7px 3px;}
+h3 { margin: 0 0 8px 0;}
+img { border:none; }
+
+#container { width:768px; margin: 0px auto 20px auto; border-left:1px solid lightGrey; border-right:1px solid lightGrey; 
+					border-top: 1px solid lightGrey;}
+#header { background-color:lightBlue; border:2px solid black; text-align:center; margin: 0 0 10px 0;
+			border-top:none; }
+#header h1 { padding: 10px 0px; }
+.loader img { display:block; margin: 30px auto; }
+audio { display:block; }
+.clear { clear:both; }
+
+#content { }
+
+/* 
+	Styles for listing page pulled from AJAX calls 
+*/
+#songListing { padding: 0 0 0 0px; width:100%; border-top: 1px solid black; }
+#songListing .songItem { height:100px; padding: 10px 0 20px 40px; }
+#songListing .songItem.shade { background-color:#CEE; }
+#songListing .songItem img { float:left; margin-right:20px; }
+#songListing .songItem .title { display:block; font-size: 14pt; }
+#songListing .songItem .artist { display:block; }
+#songListing .songItem .album { }
+#songListing .songItem a { display:block; width:300px; }
+#songListing .songItem .albumart_spacer { display:block; width:100px; height:100px; float:left; margin-right:20px; }
+#songListing .songItem .addToPlaylist { }
+
+
+/*
+	Styles from main playlist-making page
+*/
+#savePlaylistContainer { text-align:center; }
+
+/* Header for playlist on homepage is a separate element */
+#playlistHead ul { margin:0; padding:0; height:20px; background-color:lightBlue; border-top:1px solid black; border-bottom:none; width:100%;}
+
+/* Current playlist on the top of home page - updated live */
+#currentPlaylist { border-top: 1px solid black; height:100px; width:100%; font-size:9pt; overflow-y:scroll; }
+#currentPlaylist ul { width:100%; margin:0; padding:0; /*border-bottom:1px solid lightGrey; */ height:16px; }
+
+#currentPlaylist ul li, #playlistHead ul li { float:left; list-style:none; text-align:left; border-left:1px solid black; 
+		padding: 0 0 0 4px; overflow:hidden; }
+
+#currentPlaylist ul li.title, #playlistHead li.title { width:235px; border-left:none; }
+#currentPlaylist ul li.artist, #playlistHead li.artist  { width:235px; }
+#currentPlaylist ul li.album, #playlistHead li.album  { width:235px; }		
+
+
+.nextPrevArea { width:100%; }
+.nextPrevArea.top { border-top: 1px solid black; }
+.nextPrevArea.bottom { border-top: 1px solid black; border-bottom: 1px solid black; }
+.nextPrevArea .next { float:right; }
+
+
+/*
+	Styles for finalized playlist page
+*/
+
+#finalPlaylist { border-top: 1px solid black; width:100%; font-size:9pt; }
+#finalPlaylist ul { width:100%; }
+#finalPlaylistHead ul {	 height:24px; background-color:lightBlue; border-top:1px solid black; border-bottom:none; width:100%; }
+
+#finalPlaylist ul li, #finalPlaylistHead ul li { float:left; list-style:none; text-align:left; border-left:1px solid black;
+			padding: 2px 0 0 4px; height:24px; }
+#finalPlaylist ul li.title, #finalPlaylistHead li.title { width:24%; border-left:none; }
+#finalPlaylist ul li.artist, #finalPlaylistHead li.artist  { width:24%; }
+#finalPlaylist ul li.album, #finalPlaylistHead li.album  { width:24%; }
+#finalPlaylist ul li.itunes, #finalPlaylistHead li.itunes  { width:24%; }	
+#curURL { display:block; margin: 8px 0 0 30px; font-weight:bold;}
+#urlInput { height:20px; width:440px; border: 1px solid black; font-size:12pt; font-weight:bold; }

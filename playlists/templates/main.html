@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio Paradise Playlist Generator</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>		
+	<script>
+		var total = {{ total }};
+	</script>
+	<script src = "/static/js/main.js"></script>	
+	<link rel="stylesheet" type="text/css" href="/static/css/styles.css"> 		
+</head>
+<body>
+	<div id = "container">	
+		<div id = "header">
+			<h1>Radio Paradise Playlist Maker</h1>
+		</div>		
+		<div id = "content">
+			<p id = "savePlaylistContainer"><a id = "savePlaylist" href = "#">Save Playlist</a></p>
+			<div id = "playlistHead">
+				<ul>
+					<li class = "title">Title</li>
+					<li class = "artist">Artist</li>
+					<li class = "album">Album</li>
+				</ul>	
+			</div>		
+			<div id = "currentPlaylist">
+			</div>
+	
+			<div class = "nextPrevArea top">
+				<p>
+					<a class = "prev">&lt; Previous</a> <a href = "#" class = "next">Next &gt;</a>
+				</p>
+			</div>
+			<div id = "songListing">
+				<div class = "loader"><img src = "/static/img/loader.gif" /></div>
+			</div>
+			<div class = "nextPrevArea bottom">
+				<p>
+					<a class = "prev">&lt; Previous</a> <a href = "#" class = "next" disabled = "disabled">Next &gt;</a>
+				</p>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
+	
