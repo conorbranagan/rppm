@@ -14,7 +14,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # (r'^admin/', include(admin.site.urls)),
-    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/home/squid890/webapps/radioparadise/radioparadise/playlists/static', 'show_indexes': False}),
+    #(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/home/squid890/webapps/radioparadise/radioparadise/playlists/static', 'show_indexes': False}),
 	(r'^cron/scrape/', scrape),
 	(r'^$', index),
 	(r'^list/(?P<start>[0-9]+)/(?P<end>[1-9][0-9]*)$', listing),
